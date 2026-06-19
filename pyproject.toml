@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "importance-gradient"
+version = "0.1.0"
+description = "Importance-aware sparse-gradient synchronization for LLM post-training."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "torch",
+  "transformers",
+  "datasets",
+  "numpy",
+  "pandas",
+  "matplotlib",
+  "kneed",
+]
+
+[tool.setuptools.packages.find]
+include = ["importance_gradient*"]
