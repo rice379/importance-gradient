@@ -106,7 +106,3 @@ See [`docs/reproduce.md`](docs/reproduce.md) for more details.
 ImportanceGradient currently provides a PyTorch distributed prototype implementation. The runtime path reorganizes selected gradient tensors at the Python communication layer and then invokes `torch.distributed.all_reduce`. It does not require modifying NCCL internals.
 
 For large-scale experiments, prepare CUDA-compatible PyTorch, Hugging Face model/dataset access, and a multi-GPU distributed training environment.
-
-## Notice
-
-This repository does not include model weights, datasets, checkpoints, or large raw logs. Please download public models and datasets from their original sources and follow their licenses.
